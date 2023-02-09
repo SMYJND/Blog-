@@ -1,4 +1,4 @@
-import "./post.css"
+import "./Post.css"
 
  function Post() {
   return (
@@ -43,8 +43,7 @@ import "./post.css"
             dolorum illo adipisci voluptatibus eligendi, 
             quod modi asperiores, suscipit quidem. Inventore, 
           ipsam similique! Harum, tempore!
-        </p>
-        
+        </p>   
     </div>
   )
 }

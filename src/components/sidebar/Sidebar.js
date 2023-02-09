@@ -1,18 +1,15 @@
-import "./sidebar.css"
+import "./Sidebar.css"
 
  function Sidebar() {
   return (
     <div className="sidebar">
          <div className="sidebarItem">
-            <span className="sidebarTitle">
-                ABOUT ME 
-            </span>
-            {/* <img className="sidebarimg" alt="" src={require('../Assets/girl.jpg')} /> */}
+            <span className="sidebarTitle">ABOUT ME </span>
             <p>Lorem ipsum, dolor sit amet consectetur
-                 adipisicing elit. Illo dolor
-                  aspernatur ex aliquam porro harum nulla, 
-                  perferendis nihil similique alias nobis soluta
-                   numquam officiis possimus 
+                adipisicing elit. Illo dolor
+                aspernatur ex aliquam porro harum nulla, 
+                perferendis nihil similique alias nobis soluta
+                numquam officiis possimus 
                 odio consectetur molestiae natus asperiores!</p>
          </div>
          <div className="sidebarItem">
@@ -29,14 +26,12 @@ import "./sidebar.css"
             </ul>
          </div>
          <div className="sidebarItem">
-            <span className="sidebarTitle">
-                FOLLOW US 
-            </span>
+            <span className="sidebarTitle">FOLLOW US </span>
             <iv className="sidebarsocial">
             <i className="sidebarIcon fa-brands fa-square-facebook"></i>
-        <i className="sidebarIcon fa-brands fa-square-twitter"></i>
-        <i className="sidebarIcon fa-brands fa-square-instagram"></i>
-        <i className="sidebarIcon fa-brands fa-youtube"></i>
+            <i className="sidebarIcon fa-brands fa-square-twitter"></i>
+            <i className="sidebarIcon fa-brands fa-square-instagram"></i>
+            <i className="sidebarIcon fa-brands fa-youtube"></i>
             </iv>
          </div>
     </div>

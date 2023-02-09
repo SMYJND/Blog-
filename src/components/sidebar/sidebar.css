@@ -6,7 +6,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
 .sidebarItem{
@@ -25,14 +24,12 @@
     font-weight: 500;
     line-height: 20px;
     text-align: center;
-
 }
 
 .sidebarList{
     list-style: none;
     margin-bottom: 30px;
 }
-
 
 .sidebarItem > p{
     padding: 30px;
@@ -42,6 +39,7 @@
     display: inline-block;
     width: 50%;
 }
+
 .sidebarSocial{
     margin-top: 15px;
     width: 250px;
