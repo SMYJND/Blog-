@@ -49,13 +49,15 @@ export default function Write() {
               <ul>
               {
               output.map((data,index)=>(
-                      <li key={index}
+                      <div
+                       key={index}
                       className="writeInputList">
                        <h1>{data.inputTitle}</h1>
                       <p>{data.inputContent}</p>
                       <button className="btn">Edit</button>
                       <button className="btn" onClick={()=>{handleDelete(index)}}>Delete</button>
-                      </li>
+                      </div>
+                       
               ))
             }
               </ul>
