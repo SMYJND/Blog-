@@ -3,16 +3,15 @@
 }
 
 .writeForm{
-    position: relative;
-
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .writeFormGroup{
-    margin-left: 150px;
-    display: flex;
-    align-items: center;
+     align-items: center;
 }
-.addFile{
+/* .addFile{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -22,7 +21,7 @@
     margin: 5px;
     padding: 10px ;
 
-}
+} */
 
 .writeInput{
     font-size: 14px;
@@ -33,19 +32,28 @@
 
 .writeText{
     font-size: 12px;
-    padding: 50px;
+    padding: 10px;
+    height: 20vh;
     width: 50vw;
-    margin: 20px;
-    margin-left: 60px;
 }
 
-.writeSubmit{
-    position: absolute;
-    top: 20px;
-    right: 50px;
+.btn{
     color: #fff;
     border-radius: 5px;
     background-color: teal;
     padding: 10px;
     border: none;
+    width: 10vw;
+}
+
+.writeInputList{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 14px;
+    color: #444;
+    margin: 15px;
+    padding: 15px;
+    border: 1px solid #6b6969;
+    border-radius: 5px;
+    justify-content: center;
+    width: 70vw;
 }
