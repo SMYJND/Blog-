@@ -5,11 +5,6 @@ export default function Write() {
   const [inputTitle, setInputTitle] = useState("");
   const [inputContent, setInputContent] = useState("");
   const [output, setOutput] = useState([
-    {inputTitle:"1", inputContent:"===================================="},
-    {inputTitle:"2", inputContent:"===================================="},
-    {inputTitle:"3", inputContent:"===================================="},
-
-  
   ]); 
   const handleSubmit = (e) => {
     e.preventDefault()
@@ -31,10 +26,10 @@ export default function Write() {
           <form onSubmit={handleSubmit} className="writeForm" >
             <div className="writeFormGroup">
             <input type="text"
-              placeholder="Title"
-              className="writeInput"
-              value ={inputTitle} 
-              onChange ={(e)=>{setInputTitle(e.target.value)}}/>
+            placeholder="Title"
+            className="writeInput"
+            value ={inputTitle} 
+            onChange ={(e)=>{setInputTitle(e.target.value)}}/>
             </div>
             <div className="writeFormGroup">
             <textarea type="text" placeholder="Write here..." className="writeText" value={inputContent} 
@@ -43,26 +38,23 @@ export default function Write() {
             </div>
             <button type="submit"
               className="btn">
-                Publish
+              Publish
             </button>
+            </form>
             <div className="output">
               <ul>
               {
               output.map((data,index)=>(
-                      <div
-                       key={index}
+                      <div key={index}
                       className="writeInputList">
                        <h1>{data.inputTitle}</h1>
                       <p>{data.inputContent}</p>
                       <button className="btn">Edit</button>
                       <button className="btn" onClick={()=>{handleDelete(index)}}>Delete</button>
-                      </div>
-                       
-              ))
-            }
+                      </div>     
+              ))}
               </ul>
             </div>
-           </form>
     </div>
   )
 }
